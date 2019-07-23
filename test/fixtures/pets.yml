@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  species: MyString
+  location: MyString
+  description: MyText
+  found_on: 2019-07-23 17:13:37
+  lost: false
+
+two:
+  species: MyString
+  location: MyString
+  description: MyText
+  found_on: 2019-07-23 17:13:37
+  lost: false

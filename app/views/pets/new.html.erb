@@ -1,0 +1,12 @@
+<h1>Add A Lost Pet</h1>
+<%= form_for(@pet) do |f| %>
+  <%= f.label :species, "Is it a dog, cat, or rabbit?" %>
+  <%= f.text_field :species %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+  <%= f.label :found_on, "When did you find it?" %>
+  <%= f.date_field :found_on%>
+  <%= f.submit %>
+<% end %>

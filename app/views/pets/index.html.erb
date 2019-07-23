@@ -1,0 +1,9 @@
+<h1>Did you lose your 🐶 😸 🐰 ? </h1>
+<% @pets.each do |p| %>
+  <h4><%= p.species %> - <%= p.description %></h4>
+  <p>Found on <%= p.found_on.strftime("%A, %b %d") %> in <%= p.location %></p>
+  <p>Found: <%= p.found %></p>
+  <small><%= link_to "Mark As Found", pet_path(p), method: "patch" %> </small>
+<% end %>
+<%= link_to "Add a new 🐕", new_pet_path %>
+<!-- link_to "What you click", rails_prefix_path -->
